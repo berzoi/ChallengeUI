@@ -22,6 +22,7 @@ public class BasePage {
     Configuration.timeout = 10000;
     Configuration.pageLoadStrategy = "eager";
     Configuration.screenshots = true;
+    Configuration.savePageSource = true;
     Configuration.reportsFolder = "src/test/resources/screenShots";
     Selenide.open(url);
     webdriver().driver().getWebDriver().manage().window().maximize();
