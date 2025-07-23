@@ -4,6 +4,7 @@ import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Screenshots.takeScreenShot;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.screenshot;
 import static utils.ActionsHelper.scrollToTheTop;
 
 import com.codeborne.selenide.Condition;
