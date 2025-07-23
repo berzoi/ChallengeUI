@@ -14,6 +14,7 @@ Tests cover:
 - `pages/`: Page Object classes
 - `steps/`: Gherkin step definitions
 - `utils/`: Helpers and configs
+- `resources/screenShots/`: Custom test snapshots are taken for individual elements and the entire visible page after each step
 
 ## Tech Stack
 
