@@ -17,7 +17,7 @@ Tests cover:
 
 ## Tech Stack
 
-- **Java**, **Cucumber**, **Selenide**
+- **Java**, **Cucumber**, **Selenide - A powerful wrapper for Selenium that simplifies browser interactions, automatically handles most waits, and leads to more stable and concise UI tests.**
 - **Maven**, **IntelliJ IDEA**
 
 ## Run Tests
