@@ -2,6 +2,7 @@ package pages;
 
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Screenshots.takeScreenShot;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
@@ -47,6 +48,7 @@ public class MainPage {
     System.out.println("========================");
     System.out.println("---> Data for " + user);
     notifications.shouldBe(visible);
+    takeScreenShot(notifications);
 
     defaultWait(5000);
     if (!notificationsCount.exists()) {

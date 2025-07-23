@@ -1,6 +1,7 @@
 package steps;
 
 import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Screenshots.takeScreenShot;
 import static utils.DataEnum.USER;
 import static utils.ScenarioContext.getScenarioContext;
 

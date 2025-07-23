@@ -3,6 +3,7 @@ Feature: SimPals
   Scenario Outline: Check for Notifications
     Given The browser headless is 'false'
     When Page "https://999.md/ru/" is opened
+    Then the user skips the consent
     And User is logged in
       | <userName> |
     Then Getting the number of notifications

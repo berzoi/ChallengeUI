@@ -2,6 +2,7 @@ package steps;
 
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Screenshots.takeScreenShot;
 import static com.codeborne.selenide.Selenide.$;
 import static utils.ActionsHelper.scrollToTheTop;
 
@@ -59,6 +60,7 @@ public class MainPageSteps {
 
     adPage.getTitleField().shouldNotHave(attribute("value", oldTitle));
     adPage.getTitleField().shouldHave(attribute("value", newTitle));
+    takeScreenShot(adPage.getTitleField());
 
     adPage.submitEditedForm();
     adPage.getTitleField().shouldHave(text(newTitle));

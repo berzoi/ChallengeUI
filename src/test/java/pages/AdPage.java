@@ -142,11 +142,8 @@ public class AdPage {
   }
 
   public void skipConsent() {
-
-    if (skipConsentButton.isDisplayed()) {
-      skipConsentButton.scrollTo().click();
-      consentDialog.shouldBe(disappear);
-    }
+    skipConsentButton.scrollTo().click();
+    consentDialog.shouldBe(disappear);
   }
 
   public void saveToDraft() {
